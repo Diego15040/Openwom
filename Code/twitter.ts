@@ -3,9 +3,6 @@ import {environmentFactory} from './environmentFactory';
 export class twitter extends environmentFactory{
 
 
-    retweetProbability: number;
-    wear: number;
-
 
 
 
@@ -26,7 +23,7 @@ export class twitter extends environmentFactory{
         console.log('network');
     }
 
-    getRetweetProbability(){
+   /* getRetweetProbability(){
         return this.retweetProbability;
     }
 
@@ -38,7 +35,7 @@ export class twitter extends environmentFactory{
         return this.wear;
     }
 
-
+*/
 
 
 

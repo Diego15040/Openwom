@@ -1,8 +1,17 @@
 class twitterAgent extends agent{
+
     participation: number;
+    seed: boolean;
+    readProbability: number;
+    shareProbability: number;
+    retweetProbability: number;
+    wear: number;
+    //message
+    //state received-no received ; retweeted-no retweteed?
+
     
     
-    
+        
 
    constructor(participation: number,followers: number){
        participation=participation;
@@ -24,7 +33,7 @@ class hub extends facebookAgent{
 }
 
 class opinionleader extends facebookAgent{
-    charasteric: string
+    characteristic: string
     constructor(characteristic: string, participation, followers: number){
          characteristic=characteristic;
         super(participation, followers);
