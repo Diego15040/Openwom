@@ -1,0 +1,3 @@
+class twitter extends environmentFactory{
+
+}
