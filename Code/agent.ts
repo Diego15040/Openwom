@@ -1,7 +1,11 @@
 abstract class agent{
+
+    influence:number;
+    followers : agent [];
    
 
-    constructor(){
+    constructor( influence: number){
+        this.influence=influence;
         
     }
 

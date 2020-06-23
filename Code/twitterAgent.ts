@@ -1,13 +1,12 @@
 class twitterAgent extends agent{
     participation: number;
-    followers: number;
+    
     
     
 
    constructor(participation: number,followers: number){
        participation=participation;
-       followers=followers;
-       super();
+       super(followers);
    }
 
 
@@ -27,6 +26,7 @@ class hub extends facebookAgent{
 class opinionleader extends facebookAgent{
     charasteric: string
     constructor(characteristic: string, participation, followers: number){
+         characteristic=characteristic;
         super(participation, followers);
     }
 }

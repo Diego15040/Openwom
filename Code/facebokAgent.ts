@@ -1,12 +1,11 @@
 class facebookAgent extends agent{
     participation: number;
-    followers: number;
+    
     
 
-   constructor(participation: number,followers: number){
+   constructor(participation: number, influence: number){
        participation=participation;
-       followers=followers;
-       super();
+       super(influence);
    }
 
 
@@ -14,9 +13,9 @@ class facebookAgent extends agent{
 
 class facebook1 extends facebookAgent{
     characteristicasone: string
-    constructor(characteristicone: string, participation: number, followers: number){
+    constructor(characteristicone: string, participation: number, influence: number){
         characteristicone=characteristicone;
-        super(participation,followers);
+        super(participation, influence);
         
     }
     
