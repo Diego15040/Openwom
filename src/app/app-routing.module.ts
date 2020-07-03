@@ -1,27 +1,42 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { combineLatest, from } from 'rxjs';
-import { SubnavComponent } from './components/subnav/subnav.component';
-import { componentFactoryName } from '@angular/compiler';
-import { DetailsComponent } from './components/details/details.component';
-import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
-import { ListComponent } from './components/list/list.component';
-import { Page404Component } from './components/page404/page404.component';
-import { CreateComponent } from './components/create/create.component';
-import { Agent } from 'http';
+import { LoginComponent } from './components/login/login.component';
+import { CarsComponent } from './components/cars/cars.component';
+import { CarIdComponent } from './components/car-id/car-id.component';
+import { MechanicalRepairComponent } from './components/mechanical-repair/mechanical-repair.component';
+import { NewServiceComponent } from './components/new-service/new-service.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent },
-  {path: 'subnav', component: SubnavComponent},
-  {path: 'details', component: DetailsComponent},
-  {path: 'list', component: ListComponent},
-  {path: 'create', component: CreateComponent},
-  {path: '**', component: Page404Component},
-  
-  
-  
+  {
+    path: 'home',
+    component: HomeComponent
+    
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    
+  },
+  {
+    path: 'Vehículos',
+    component: CarsComponent
+    
+  },
+  {
+    path: 'Vehículo/:id',
+    component:CarIdComponent
+  },
+  {
+    path: 'Reparación/:patent/:client/:date',
+    component:MechanicalRepairComponent
+  },
+  {
+    path: 'nuevo_servicio',
+    component:NewServiceComponent
+  }
+
 ];
 
 @NgModule({
